@@ -15,6 +15,12 @@ const NevBar = () => {
        <li><NavLink to="/login">Login</NavLink></li>
        <li><NavLink to="/register">registration</NavLink></li>
        <li><NavLink to="/orders">orders</NavLink></li>
+       {
+        user && <>
+          <li><NavLink to="/profile">profile</NavLink></li>
+          <li><NavLink to="/dashboard">dashbord</NavLink></li>
+        </>
+       }
        
   </>
   return (
